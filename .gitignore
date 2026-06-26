@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.astro/
+
+# Wrangler / Cloudflare local state (miniflare KV, cache sqlite, deploy cache)
+.wrangler/
+.dev.vars
+
+# Env / secrets — never commit these
+.env
+.env.*
+!.env.example
+
+# MCP config (contains API key)
+.mcp.json
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
